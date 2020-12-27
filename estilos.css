@@ -1,0 +1,246 @@
+/*----ESTILOS GENERALES----*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background: #F3F3F3;
+	font-family: sans-serif ;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
+}
+
+/*------HEADER-------*/
+
+header {
+	padding: 40px 0px;
+}
+
+header .logo{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+header .logo p{
+	color: #9B9B9B;
+}
+
+/*-----FORM DE LA BARRA DE BUSQUEDA------*/
+
+header form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+/*-----BARRA DE BUSQUEDA-----*/
+
+header .barra-busqueda {
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	background: #FFF;
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+/*-----CATEGORIAS-----*/
+
+header .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*-----ENLACES DE LAS CATEGORIAS-----*/
+
+header .categorias a {
+	color: #9B9B9B;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+header .categorias a.activo {
+	color: #000;
+}
+
+/*----FINAL DEL HEADER----*/
+
+
+/*------ESTILOS GRID-----*/
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+
+}
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s 
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.33333% - 20px);
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+/*----ESTILOS OVERLAY O DE LA VENTANA EMERGENTE----*/
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.9);
+	width: 100%;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.overlay.activo {
+	display: flex;
+}
+
+.overlay img {
+	max-width: 100%;
+}
+
+/*-----ESTILO DE LA DESCRIPCION DE LA IMAGEN-----*/
+
+.overlay .descripcion{
+	display: block;
+	background: #FFF;
+	padding: 20px;
+	text-align: center;
+	margin-top: 5px;
+	border-radius: 10px;
+	max-width: 50%;
+}
+
+/*-----ESTILOS DEL BOTON CERRAR VENTANA EMERGENTE-----*/
+
+.contenedor-img {
+	position: relative;
+}
+
+/*----ESTILOS DEL BOTON DE CERRAR----*/
+
+.overlay #btn-cerrar-popup {
+	background: none;
+	font-size: 20px;
+	color: #FFF;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+
+/*------ESTILOS DEL FOOTER------*/
+
+footer .redes-sociales {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+/*-----ESTILOS DE LOS ICONOS DE REDES SOCIALES-----*/
+
+footer .redes-sociales a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #000;
+	color: #FFF;
+	margin: 20px;
+	text-align: center;
+	border-radius: 100px;
+	transition: 0.3s ease all;
+}
+
+/*-----COLORES DE LOS ICONOS-----*/
+
+footer .redes-sociales .twitter{background: #1DA1F2;}
+footer .redes-sociales .facebook{background: #3B5998;}
+footer .redes-sociales .instagram{background: #C13584;}
+
+/*-----TAMAÑO Y ALINEACION DE LOS ICONOS-----*/
+
+footer .redes-sociales a i{
+	font-size: 20px;
+	line-height: 60px;
+}
+
+/*-----ANIMACION DE LOS ICONOS-----*/
+
+footer .contenedor-icono:hover a {
+	animation: icono 0.5s ease;
+}
+
+@keyframes icono {
+	from{
+		transform: rotate3d(0,0,0,0);
+	}
+	to{transform: rotate3d(0,1,0,360deg);
+
+	}
+}
+
+/*----INFORMACION PERSONAL----*/
+
+footer .creado-por {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #C13584;
+}
+
+footer .creado-por a {color: #000;}
+footer .creado-por a:hover {text-decoration: underline;}
+
+/*-----MEDIAQUERIES PARA ADAPTAR A MOVILES-----*/
+
+@media screen and (max-width: 700px){
+	.grid .item {
+		width: calc(50% - 20px);
+	}
+
+	header .barra-busqueda {
+		width: 100%;
+	}
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portafolio - Elian Gonzalez</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="https://kit.fontawesome.com/7c2551dffb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="contenedor">
+	<header>
+		<div class="logo">
+			<h1>Elian Gonzalez</h1>
+			<p>Desarrollador web Frontend</p>
+		</div>
+	
+	<form>
+		<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+	</form>
+	<div class="categorias" id="categorias">
+		<a href="#" class="activo">Todos</a>
+		<a href="#">Naturaleza</a>
+		<a href="#">Ciudades</a>
+		<a href="#">Personas</a>
+		<a href="#">Animales</a>
+	</div>
+
+	</header>
+
+	<section class="grid" id="grid">
+		<div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades autos carros calles"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="imagenes/ciudad1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="imagenes/persona1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas mar playas"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="imagenes/paisaje1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales leones"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="imagenes/animal1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales pandas"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="imagenes/animal2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="imagenes/persona2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas niebla"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="imagenes/paisaje2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="imagenes/ciudad2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="naturaleza"
+				 data-etiquetas="naturaleza hojas plantas"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+				 	"
+			>
+				<div class="item-contenido">
+					<img src="imagenes/naturaleza1.png" alt="">
+				</div>
+			</div>
+		
+	</section>
+
+	<section class="overlay" id="overlay">
+		<div class="contenedor-img">
+			<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+			<img src="">
+		</div>
+		<p class="descripcion"></p>
+	</section>
+
+	<footer class="contenedor">
+		<div class="redes-sociales">
+			<div class="contenedor-icono">
+				<a href="https://www.facebook.com/eliancarlo.gonzalezmarcano/" target="_blank" class="twitter">
+					<i class="fab fa-facebook-f"></i>
+				</a>	
+			</div>
+
+			<div class="contenedor-icono">
+				<a href="#" target="_blank" class="instagram">
+					<i class="fab fa-instagram"></i>
+				</a>	
+			</div>
+
+			<div class="contenedor-icono">
+				<a href="#" target="_blank" class="twitter">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+		</div>
+		<div class="creado-por">
+			<p>Sitio creado por <a href="#">Elian Gonzalez</a></p>
+		</div>
+	</footer>
+	</div>
+
+	<!-- ____LIBRERIA MUURI____ -->
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
